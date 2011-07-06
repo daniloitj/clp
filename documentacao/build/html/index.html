@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Welcome to Clp’s documentation! &mdash; Clp v0.0.1 documentation</title>
+    <title>Documentação do Projeto de Clp! &mdash; Clp v0.0.1 documentation</title>
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
     <link rel="top" title="Clp v0.0.1 documentation" href="#" />
-    <link rel="next" title="Processamento de Imagem" href="codigo.html" /> 
+    <link rel="next" title="Descrição do Trabalho" href="_templates/codigo.html" /> 
   </head>
   <body>
     <div class="related">
@@ -34,10 +34,7 @@
           <a href="genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="py-modindex.html" title="Índice de Módulos do Python"
-             >módulos</a> |</li>
-        <li class="right" >
-          <a href="codigo.html" title="Processamento de Imagem"
+          <a href="_templates/codigo.html" title="Descrição do Trabalho"
              accesskey="N">próximo</a> |</li>
         <li><a href="#">Clp v0.0.1 documentation</a> &raquo;</li> 
       </ul>
@@ -48,307 +45,79 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="welcome-to-clp-s-documentation">
-<h1>Welcome to Clp&#8217;s documentation!<a class="headerlink" href="#welcome-to-clp-s-documentation" title="Link permanente para este título">¶</a></h1>
+  <div class="section" id="documentacao-do-projeto-de-clp">
+<h1>Documentação do Projeto de Clp!<a class="headerlink" href="#documentacao-do-projeto-de-clp" title="Link permanente para este título">¶</a></h1>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="codigo.html">Processamento de Imagem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_templates/codigo.html">Descrição do Trabalho</a></li>
 </ul>
 </div>
-<span class="target" id="module-teste"></span><p>This module illustrates how to write your docstring in OpenAlea
-and other projects related to OpenAlea.</p>
 <dl class="class">
-<dt id="teste.MainClass1">
-<em class="property">class </em><tt class="descclassname">teste.</tt><tt class="descname">MainClass1</tt><a class="reference internal" href="_modules/teste.html#MainClass1"><span class="viewcode-link">[código fonte]</span></a><a class="headerlink" href="#teste.MainClass1" title="Link permanente para esta definição">¶</a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
-<p>Esta classe ilustra as caracteristicas de uma imagem</p>
-<p>The first line is brief explanation, which may be completed with 
-a longer one. For instance to discuss about its methods. The only
-method here is <a class="reference internal" href="#teste.MainClass1.function1" title="teste.MainClass1.function1"><tt class="xref py py-func docutils literal"><span class="pre">function1()</span></tt></a>&#8216;s. The main idea is to document
-the class and methods&#8217;s arguments with</p>
-<ul>
-<li><p class="first"><strong>parameters</strong>, <strong>types</strong>, <strong>return</strong> and <strong>return types</strong>:</p>
-<div class="highlight-python"><pre>:param arg1: description
-:param arg2: description
-:type arg1: type description
-:type arg1: type description
-:return: return description
-:rtype: the return type description</pre>
-</div>
-</li>
-<li><p class="first">and to provide sections such as <strong>Example</strong> using the double commas syntax:</p>
-<div class="highlight-python"><pre>:Example:
-
-followed by a blank line !</pre>
-</div>
-<p>which appears as follow:</p>
-<table class="docutils field-list" frame="void" rules="none">
+<dt id="a.Imagem">
+<em class="property">class </em><tt class="descclassname">a.</tt><tt class="descname">Imagem</tt><a class="reference internal" href="_modules/a.html#Imagem"><span class="viewcode-link">[código fonte]</span></a><a class="headerlink" href="#a.Imagem" title="Link permanente para esta definição">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Crie uma instancia dessa classe e podera: </dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Example:</th><td class="field-body"></td>
+<tr class="field"><th class="field-name" colspan="2">criar um vetor de imagens do tamanho permitido pela limite da sua maquina:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">description</td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">aplicar um filtro em uma imagem:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">description</td>
+</tr>
+<tr class="field"><th class="field-name" colspan="2">criar uma imagem em branco:</th></tr>
+<tr><td>&nbsp;</td><td class="field-body">type description</td>
 </tr>
 </tbody>
 </table>
-<p>followed by a blank line</p>
-</li>
-<li><p class="first">Finally special sections such as <strong>See Also</strong>, <strong>Warnings</strong>, <strong>Notes</strong>
-use the sphinx syntax (<em>paragraph directives</em>):</p>
-<div class="highlight-python"><pre>.. seealso:: blabla
-.. warnings also:: blabla
-.. note:: blabla
-.. todo:: blabla</pre>
-</div>
-</li>
-</ul>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<dl class="last docutils">
-<dt>There are many other Info fields but they may be redundant:</dt>
-<dd><ul class="first last simple">
-<li>param, parameter, arg, argument, key, keyword: Description of a
-parameter.</li>
-<li>type: Type of a parameter.</li>
-<li>raises, raise, except, exception: That (and when) a specific
-exception is raised.</li>
-<li>var, ivar, cvar: Description of a variable.</li>
-<li>returns, return: Description of the return value.</li>
-<li>rtype: Return type.</li>
-</ul>
 </dd>
 </dl>
+<ul>
+<li><p class="first"><strong>parameters</strong>, <strong>types</strong>, <strong>return</strong> and <strong>return types</strong>:</p>
+<div class="highlight-python"><pre>:param local_de_entrada: contem o endereco de uma pasta, a qual se pode adicionar imagens e aplicar filtros
+:param local_de_saida: contem o endereco de uma pasta, a qual vai conter o resultado dos filtros
+:param imagens_de_entrada: aqui armazeno todas as imagens que estao na pasta de entrada
+:param imagem_com_filtro: destinado a armazenar as imagens com filtros
+:param vetor: para armazenar as imagens em uma lista</pre>
 </div>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<p class="last">There are many other directives such as versionadded, versionchanged,
-rubric, centered, ... See the sphinx documentation for more details.</p>
+</li>
+<li><p class="first"><strong>Examplo de Como usar:</strong>:</p>
+<div class="highlight-python"><pre>:Examplo de Como usar::
+
+&gt;&gt;&gt; import Imagem
+&gt;&gt;&gt; y = Imagem()
+&gt;&gt;&gt; y.vetor_de_img(2)</pre>
 </div>
-<p>Here below is the results of the <a class="reference internal" href="#teste.MainClass1.function1" title="teste.MainClass1.function1"><tt class="xref py py-func docutils literal"><span class="pre">function1()</span></tt></a> docstring.</p>
+</li>
+</ul>
 <dl class="method">
-<dt id="teste.MainClass1.function1">
-<tt class="descname">function1</tt><big>(</big><em>arg1</em>, <em>arg2</em>, <em>arg3</em><big>)</big><a class="reference internal" href="_modules/teste.html#MainClass1.function1"><span class="viewcode-link">[código fonte]</span></a><a class="headerlink" href="#teste.MainClass1.function1" title="Link permanente para esta definição">¶</a></dt>
-<dd><p>returns (arg1 / arg2) + arg3</p>
-<p>This is a longer explanation, which may include math with latex syntax
-<a href="#id1"><span class="problematic" id="id2">:math:`\alpha`</span></a>.
-Then, you need to provide optional subsection in this order (just to be
-consistent and have a uniform documentation. Nothing prevent you to
-switch the order):</p>
-<blockquote>
-<div><ul class="simple">
-<li>parameters using <tt class="docutils literal"><span class="pre">:param</span> <span class="pre">&lt;name&gt;:</span> <span class="pre">&lt;description&gt;</span></tt></li>
-<li>type of the parameters <tt class="docutils literal"><span class="pre">:type</span> <span class="pre">&lt;name&gt;:</span> <span class="pre">&lt;description&gt;</span></tt></li>
-<li>returns using <tt class="docutils literal"><span class="pre">:returns:</span> <span class="pre">&lt;description&gt;</span></tt></li>
-<li>examples (doctest)</li>
-<li>seealso using <tt class="docutils literal"><span class="pre">..</span> <span class="pre">seealso::</span> <span class="pre">text</span></tt></li>
-<li>notes using <tt class="docutils literal"><span class="pre">..</span> <span class="pre">note::</span> <span class="pre">text</span></tt></li>
-<li>warning using <tt class="docutils literal"><span class="pre">..</span> <span class="pre">warning::</span> <span class="pre">text</span></tt></li>
-<li>todo <tt class="docutils literal"><span class="pre">..</span> <span class="pre">todo::</span> <span class="pre">text</span></tt></li>
-</ul>
-</div></blockquote>
-<dl class="docutils">
-<dt><strong>Advantages</strong>:</dt>
-<dd><ul class="first last simple">
-<li>Uses sphinx markups, which will certainly be improved in future
-version</li>
-<li>Nice HTML output with the See Also, Note, Warnings directives</li>
-</ul>
-</dd>
-<dt><strong>Drawbacks</strong>:</dt>
-<dd><ul class="first last simple">
-<li>Just looking at the docstring, the parameter, type and  return
-sections do not appear nicely</li>
-</ul>
-</dd>
-</dl>
+<dt id="a.Imagem.aplica_filtro">
+<tt class="descname">aplica_filtro</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/a.html#Imagem.aplica_filtro"><span class="viewcode-link">[código fonte]</span></a><a class="headerlink" href="#a.Imagem.aplica_filtro" title="Link permanente para esta definição">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="a.Imagem.criar_imagem">
+<tt class="descname">criar_imagem</tt><big>(</big><em>x</em>, <em>y</em><big>)</big><a class="reference internal" href="_modules/a.html#Imagem.criar_imagem"><span class="viewcode-link">[código fonte]</span></a><a class="headerlink" href="#a.Imagem.criar_imagem" title="Link permanente para esta definição">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="a.Imagem.vetor_de_img">
+<tt class="descname">vetor_de_img</tt><big>(</big><em>tamanho_do_vetor</em><big>)</big><a class="reference internal" href="_modules/a.html#Imagem.vetor_de_img"><span class="viewcode-link">[código fonte]</span></a><a class="headerlink" href="#a.Imagem.vetor_de_img" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>cria um vetor do tamanho do argumento que recebe, e retorna o tempo nescessario para armazenar essas imagens</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Parâmetros:</th><td class="field-body"><ul class="first simple">
-<li><strong>arg1</strong> (<em>int, float,...</em>) &#8211; the first value</li>
-<li><strong>arg2</strong> (<em>int, float,...</em>) &#8211; the first value</li>
-<li><strong>arg3</strong> (<em>int, float,...</em>) &#8211; the first value</li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Retorna:</th><td class="field-body"><p class="first">arg1/arg2 +arg3</p>
-</td>
-</tr>
-<tr class="field"><th class="field-name" colspan="2">Tipo de retorno:</th></tr>
-<tr><td>&nbsp;</td><td class="field-body"><p class="first">int, float</p>
-</td>
-</tr>
 <tr class="field"><th class="field-name">Example :</th><td class="field-body"></td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">template</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">MainClass1</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">function1</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="go">2</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">Imagem</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">Imagem</span><span class="o">.</span><span class="n">vetor_de_img</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
 </pre></div>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<p class="last">can be useful to emphasize
-important feature</p>
-</div>
-<div class="admonition-veja-tambem admonition seealso">
-<p class="first admonition-title">Veja também</p>
-<p class="last"><tt class="xref py py-class docutils literal"><span class="pre">MainClass2</span></tt></p>
-</div>
-<div class="admonition warning">
-<p class="first admonition-title">Aviso</p>
-<p class="last">arg2 must be non-zero.</p>
-</div>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt>
-<em class="property">class </em><tt class="descclassname">teste.</tt><tt class="descname">MainClass1</tt><a class="reference internal" href="_modules/teste.html#MainClass1"><span class="viewcode-link">[código fonte]</span></a></dt>
-<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
-<p>Esta classe ilustra as caracteristicas de uma imagem</p>
-<p>The first line is brief explanation, which may be completed with 
-a longer one. For instance to discuss about its methods. The only
-method here is <a class="reference internal" href="#teste.MainClass1.function1" title="teste.MainClass1.function1"><tt class="xref py py-func docutils literal"><span class="pre">function1()</span></tt></a>&#8216;s. The main idea is to document
-the class and methods&#8217;s arguments with</p>
-<ul>
-<li><p class="first"><strong>parameters</strong>, <strong>types</strong>, <strong>return</strong> and <strong>return types</strong>:</p>
-<div class="highlight-python"><pre>:param arg1: description
-:param arg2: description
-:type arg1: type description
-:type arg1: type description
-:return: return description
-:rtype: the return type description</pre>
-</div>
-</li>
-<li><p class="first">and to provide sections such as <strong>Example</strong> using the double commas syntax:</p>
-<div class="highlight-python"><pre>:Example:
-
-followed by a blank line !</pre>
-</div>
-<p>which appears as follow:</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Example:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-<p>followed by a blank line</p>
-</li>
-<li><p class="first">Finally special sections such as <strong>See Also</strong>, <strong>Warnings</strong>, <strong>Notes</strong>
-use the sphinx syntax (<em>paragraph directives</em>):</p>
-<div class="highlight-python"><pre>.. seealso:: blabla
-.. warnings also:: blabla
-.. note:: blabla
-.. todo:: blabla</pre>
-</div>
-</li>
-</ul>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<dl class="last docutils">
-<dt>There are many other Info fields but they may be redundant:</dt>
-<dd><ul class="first last simple">
-<li>param, parameter, arg, argument, key, keyword: Description of a
-parameter.</li>
-<li>type: Type of a parameter.</li>
-<li>raises, raise, except, exception: That (and when) a specific
-exception is raised.</li>
-<li>var, ivar, cvar: Description of a variable.</li>
-<li>returns, return: Description of the return value.</li>
-<li>rtype: Return type.</li>
-</ul>
-</dd>
-</dl>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<p class="last">There are many other directives such as versionadded, versionchanged,
-rubric, centered, ... See the sphinx documentation for more details.</p>
-</div>
-<p>Here below is the results of the <a class="reference internal" href="#teste.MainClass1.function1" title="teste.MainClass1.function1"><tt class="xref py py-func docutils literal"><span class="pre">function1()</span></tt></a> docstring.</p>
-<dl class="method">
-<dt>
-<tt class="descname">function1</tt><big>(</big><em>arg1</em>, <em>arg2</em>, <em>arg3</em><big>)</big><a class="reference internal" href="_modules/teste.html#MainClass1.function1"><span class="viewcode-link">[código fonte]</span></a></dt>
-<dd><p>returns (arg1 / arg2) + arg3</p>
-<p>This is a longer explanation, which may include math with latex syntax
-<a href="#id3"><span class="problematic" id="id4">:math:`\alpha`</span></a>.
-Then, you need to provide optional subsection in this order (just to be
-consistent and have a uniform documentation. Nothing prevent you to
-switch the order):</p>
-<blockquote>
-<div><ul class="simple">
-<li>parameters using <tt class="docutils literal"><span class="pre">:param</span> <span class="pre">&lt;name&gt;:</span> <span class="pre">&lt;description&gt;</span></tt></li>
-<li>type of the parameters <tt class="docutils literal"><span class="pre">:type</span> <span class="pre">&lt;name&gt;:</span> <span class="pre">&lt;description&gt;</span></tt></li>
-<li>returns using <tt class="docutils literal"><span class="pre">:returns:</span> <span class="pre">&lt;description&gt;</span></tt></li>
-<li>examples (doctest)</li>
-<li>seealso using <tt class="docutils literal"><span class="pre">..</span> <span class="pre">seealso::</span> <span class="pre">text</span></tt></li>
-<li>notes using <tt class="docutils literal"><span class="pre">..</span> <span class="pre">note::</span> <span class="pre">text</span></tt></li>
-<li>warning using <tt class="docutils literal"><span class="pre">..</span> <span class="pre">warning::</span> <span class="pre">text</span></tt></li>
-<li>todo <tt class="docutils literal"><span class="pre">..</span> <span class="pre">todo::</span> <span class="pre">text</span></tt></li>
-</ul>
-</div></blockquote>
-<dl class="docutils">
-<dt><strong>Advantages</strong>:</dt>
-<dd><ul class="first last simple">
-<li>Uses sphinx markups, which will certainly be improved in future
-version</li>
-<li>Nice HTML output with the See Also, Note, Warnings directives</li>
-</ul>
-</dd>
-<dt><strong>Drawbacks</strong>:</dt>
-<dd><ul class="first last simple">
-<li>Just looking at the docstring, the parameter, type and  return
-sections do not appear nicely</li>
-</ul>
-</dd>
-</dl>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parâmetros:</th><td class="field-body"><ul class="first simple">
-<li><strong>arg1</strong> (<em>int, float,...</em>) &#8211; the first value</li>
-<li><strong>arg2</strong> (<em>int, float,...</em>) &#8211; the first value</li>
-<li><strong>arg3</strong> (<em>int, float,...</em>) &#8211; the first value</li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Retorna:</th><td class="field-body"><p class="first">arg1/arg2 +arg3</p>
-</td>
-</tr>
-<tr class="field"><th class="field-name" colspan="2">Tipo de retorno:</th></tr>
-<tr><td>&nbsp;</td><td class="field-body"><p class="first">int, float</p>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Example :</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">template</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">MainClass1</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">function1</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="go">2</span>
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Nota</p>
-<p class="last">can be useful to emphasize
-important feature</p>
-</div>
-<div class="admonition-veja-tambem admonition seealso">
-<p class="first admonition-title">Veja também</p>
-<p class="last"><tt class="xref py py-class docutils literal"><span class="pre">MainClass2</span></tt></p>
-</div>
-<div class="admonition warning">
-<p class="first admonition-title">Aviso</p>
-<p class="last">arg2 must be non-zero.</p>
 </div>
 </dd></dl>
 
@@ -372,15 +141,15 @@ important feature</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Tabela de Conteúdo</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Welcome to Clp&#8217;s documentation!</a><ul>
+<li><a class="reference internal" href="#">Documentação do Projeto de Clp!</a><ul>
 </ul>
 </li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
   <h4>Próximo tópico</h4>
-  <p class="topless"><a href="codigo.html"
-                        title="próximo capítulo">Processamento de Imagem</a></p>
+  <p class="topless"><a href="_templates/codigo.html"
+                        title="próximo capítulo">Descrição do Trabalho</a></p>
   <h3>Esta Página</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/index.txt"
@@ -410,10 +179,7 @@ important feature</p>
           <a href="genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="py-modindex.html" title="Índice de Módulos do Python"
-             >módulos</a> |</li>
-        <li class="right" >
-          <a href="codigo.html" title="Processamento de Imagem"
+          <a href="_templates/codigo.html" title="Descrição do Trabalho"
              >próximo</a> |</li>
         <li><a href="#">Clp v0.0.1 documentation</a> &raquo;</li> 
       </ul>

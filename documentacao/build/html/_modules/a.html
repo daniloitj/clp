@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>a &mdash; Clp v0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="top" title="Clp v0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="Código do módulo" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li><a href="../index.html">Clp v0.0.1 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Código do módulo</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Código fonte de a</h1><div class="highlight"><pre>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">Image</span><span class="o">,</span><span class="nn">ImageDraw</span><span class="o">,</span> <span class="nn">ImageFilter</span><span class="o">,</span> <span class="nn">time</span>
+
+<div class="viewcode-block" id="Imagem"><a class="viewcode-back" href="../index.html#a.Imagem">[documentos]</a><span class="k">class</span> <span class="nc">Imagem</span><span class="p">:</span>
+    <span class="n">local_de_entrada</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="n">local_de_saida</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="n">imagens_de_entrada</span> <span class="o">=</span> <span class="bp">None</span>	
+    <span class="n">imagem_com_filtro</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="n">vetor</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">local_de_entrada</span> <span class="o">=</span> <span class="s">&quot;C:\Users\HP\Desktop\imagens\inputFolder&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">local_de_saida</span> <span class="o">=</span> <span class="s">&quot;C:\Users\HP\Desktop\imagens\outFolder&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vetor</span> <span class="o">=</span> <span class="p">[]</span>		
+        <span class="k">print</span> <span class="s">&quot;Criando nova instancia Imagem&quot;</span> 
+
+<div class="viewcode-block" id="Imagem.aplica_filtro"><a class="viewcode-back" href="../index.html#a.Imagem.aplica_filtro">[documentos]</a>    <span class="k">def</span> <span class="nf">aplica_filtro</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">imagens_de_entrada</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">local_de_entrada</span><span class="p">)</span>
+        <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
+        <span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">imagens_de_entrada</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">imagem_com_filtro</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">local_de_entrada</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\\</span><span class="s">&quot;</span> <span class="o">+</span> <span class="nb">file</span>
+            <span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">imagem_com_filtro</span><span class="p">)</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s">&quot;L&quot;</span><span class="p">)</span>
+            <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">size</span>
+            <span class="k">print</span> <span class="n">im</span><span class="o">.</span><span class="n">format</span><span class="p">,</span> <span class="n">im</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">im</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span>
+            <span class="n">fil</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">ImageFilter</span><span class="o">.</span><span class="n">FIND_EDGES</span><span class="p">)</span>		
+        <span class="bp">self</span><span class="o">.</span><span class="n">imagem_com_filtro</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">local_de_saida</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\\</span><span class="s">&quot;</span> <span class="o">+</span> <span class="nb">file</span>
+        <span class="n">fil</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">imagem_com_filtro</span><span class="p">)</span>
+        <span class="n">tempo_final</span> <span class="o">=</span> <span class="n">t0</span> <span class="o">-</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>	
+        <span class="k">return</span> <span class="mi">0</span>
+		</div>
+<div class="viewcode-block" id="Imagem.criar_imagem"><a class="viewcode-back" href="../index.html#a.Imagem.criar_imagem">[documentos]</a>    <span class="k">def</span> <span class="nf">criar_imagem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s">&quot;RGB&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">),</span> <span class="s">&quot;#FFFFFF&quot;</span><span class="p">)</span>
+        <span class="n">draw</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="o">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">local_de_saida</span> <span class="o">+</span> <span class="s">&quot;/out.png&quot;</span><span class="p">,</span> <span class="s">&quot;PNG&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">img</span>
+		</div>
+<div class="viewcode-block" id="Imagem.vetor_de_img"><a class="viewcode-back" href="../index.html#a.Imagem.vetor_de_img">[documentos]</a>    <span class="k">def</span> <span class="nf">vetor_de_img</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tamanho_do_vetor</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">criar_imagem</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">tamanho_do_vetor</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">vetor</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">tempo_final</span> <span class="o">=</span> <span class="n">t0</span> <span class="o">-</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
+        <span class="k">print</span> <span class="n">tempo_final</span>
+        <span class="k">return</span> <span class="mi">0</span> 
+ 
+
+	
+
+	</div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Pesquisa rápida</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Ir" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Digite os termos da busca ou o nome de um módulo, classe ou função.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li><a href="../index.html">Clp v0.0.1 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Código do módulo</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Danilo Silva dos Santos.
+      Criado com <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

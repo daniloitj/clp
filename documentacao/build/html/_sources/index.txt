@@ -3,28 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Clp's documentation!
+Documentação do Projeto de Clp!
 ===============================
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
-   codigo
+   _templates/codigo
    
-.. automodule:: teste
-    :members:
-    :undoc-members:
-    :inherited-members:
-    :show-inheritance:  
-
-.. autoclass:: teste.MainClass1
+.. autoclass:: a.Imagem
    :members:
    :undoc-members:
    :inherited-members:
-   :show-inheritance:	   
+   :show-inheritance: 
 
+	
+	
 Indices and tables
 ==================
 
